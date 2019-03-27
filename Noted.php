@@ -43,7 +43,7 @@
     * ? untuk menambah keterangan/status perubahaan saat upload ke repo online, 
     * * git remote add origin https://github.com/ogisetiawan/simple-snippet.git
     * ? untuk meng-setting remote origin dari repo online, repo online bisa dilihat pada link yang tersedia di bagian atas Project dengan format “.git”
-    * * git push -u origin master
+    * * git push -u origin master / git push origisn master --force
     * ? Perintah untuk mengupload file yang ada pada repo lokal ke repo online yang diletakkan pada branch yang sudah tersedia di repo online.
     * * git pull
     * ? 

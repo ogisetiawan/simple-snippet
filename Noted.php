@@ -36,8 +36,15 @@
     /**
     * !### GIT MANUALY ###
     * * git init 
-    * * git add . 
+    * ? untuk meng-set folder yang digunakan tersebut sebagai repo local git. bisa di bilang ini instalasi git pertama kali
+    * * git add . / git add nama_file.php / git add folder/nama_file.php
+    * ? untuk menambah file project yang mau di upload sebelum di commit
     * * git commit -m "first commit" 
+    * ? untuk menambah keterangan/status perubahaan saat upload ke repo online, 
     * * git remote add origin https://github.com/ogisetiawan/simple-snippet.git
+    * ? untuk meng-setting remote origin dari repo online, repo online bisa dilihat pada link yang tersedia di bagian atas Project dengan format “.git”
     * * git push -u origin master
+    * ? Perintah untuk mengupload file yang ada pada repo lokal ke repo online yang diletakkan pada branch yang sudah tersedia di repo online.
+    * * git pull
+    * ? 
     */

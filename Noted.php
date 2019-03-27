@@ -22,7 +22,7 @@
   */
 
   /**
-   * ! ### WORKING REMOTE REPOSITORY GIT ###
+   * ! ### WORKING REMOTE REPOSITORY VIA VSCODE ###
    * ? buatlah sebuah repository baru pada github.
    * ? copy url git
    * ? masukan perintah add origin dan marge url git hasil clone 
@@ -34,7 +34,7 @@
    */
 
     /**
-    * !### GIT MANUALY ###
+    * !### WORKING REMOTE REPOSITORY GIT VIA CMD ###
     * * git init 
     * ? untuk meng-set folder yang digunakan tersebut sebagai repo local git. bisa di bilang ini instalasi git pertama kali
     * * git add . / git add nama_file.php / git add folder/nama_file.php
@@ -46,5 +46,5 @@
     * * git push -u origin master / git push origisn master --force
     * ? Perintah untuk mengupload file yang ada pada repo lokal ke repo online yang diletakkan pada branch yang sudah tersedia di repo online.
     * * git pull
-    * ? 
+    * ? ? Perintah untuk download file yang ada pada repo online ke repo lokal.
     */

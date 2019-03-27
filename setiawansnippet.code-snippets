@@ -1,0 +1,138 @@
+{
+	// PHP
+	"Error Handling": {
+		"scope": "php",
+		"prefix": "de",
+		"body": [
+			"die();",
+			"$0"
+		],
+		"description": ""
+	},
+	"Output PHP": {
+		"scope": "php",
+		"prefix": "eo",
+		"body": [
+			"echo('$1');"
+		],
+		"description": ""
+	},
+	"Output Variable": {
+		"scope": "php",
+		"prefix": "eov",
+		"body": [
+			"$$1 = '$2';",
+			"echo($$1);"
+		],
+		"description": ""
+	},
+	"Tag PHP": {
+		// "scope": "php",
+		"prefix": "tag",
+		"body": [
+			"<?php",
+			"\t$1"
+		],
+		"description": ""
+	},
+	"Tag Open Html": {
+		"scope": "php,html,javascript",
+		"prefix": "tags",
+		"body": [
+			"<?= $$1; ?>" 
+		],
+		"description": ""
+	},
+	
+	// +++++++++++ PHP $2 +++++++++++++++
+	"Encrypt MD5": {
+		"scope": "php",
+		"prefix": "md5",
+		"body": [
+			"$$var = md5('$1');",
+			"echo($$var);"
+		],
+		"description": ""
+	},
+
+	// ++++++++++ PHP $3 ++++++++++++
+	"JSON Decode": {
+		"scope": "php",
+		"prefix": "jd",
+		"body": [
+			"$$1 = json_decode($$2);",
+		],
+		"description": ""
+	},
+	"Document Root": {
+		"prefix": "root",
+		"body": [
+			"$$path  = $$_SERVER['DOCUMENT_ROOT'];",
+			"$$path .= '1.php';",
+			"include_once($$path);"
+		],
+		"description": ""
+	},
+	"Redirect Header": {
+		"prefix": "headred",
+		"body": [
+			"header('Location: https://$1.php');"
+		],
+		"description": ""
+	},
+	"Find Array Max": {
+		"prefix": "findmax",
+		"body": [
+			"$$array = array($$2);",
+			"print max($$array);"
+		],
+		"description": ""
+	},
+	"Find Array Min": {
+		"prefix": "findmin",
+		"body": [
+			"$$array = array($$2);",
+			"print min($$array);"
+		],
+		"description": ""
+	},
+
+	// Query
+	"Query Select": {
+		"prefix": "qselect",
+		"body": [
+			"SELECT * FROM tabel"
+		],
+		"description": "Menampilkan data"
+	},
+	"Query Where": {
+		"prefix": "qwhere",
+		"body": [
+			"SELECT * FROM tabel WHERE coloumn = 'value';"
+		],
+		"description": "Menampilkan data spesifik"
+	},
+	"Query Like": {
+		"prefix": "qlike",
+		"body": [
+			"SELECT * FROM tabel WHERE coloumn LIKE '%value%';"
+		],
+		"description": ""
+	},
+	"Query Join 1 Table": {
+		"prefix": "qjoin",
+		"body": [
+			"SELECT * FROM table1 AS a\r",
+			"JOIN tabel2 AS b ON b.id_b=a.id_a"
+		],
+		"description": "join 1 tabel"
+	},
+	"Query Left Join": {
+		"prefix": "qleftjoin",
+		"body": [
+			"SELECT * FROM table1 AS a\r",
+			"LEFT JOIN tabel2 AS b ON b.id_b=a.id_a"
+		],
+		"description": "Left"
+	},
+}

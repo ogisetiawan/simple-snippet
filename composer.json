@@ -1,0 +1,12 @@
+{
+    "name": "ogisetiawan/learn-git",
+    "description": "git version control",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ogisetiawan",
+            "email": "ogisetiawan@gmail.com"
+        }
+    ],
+    "require": {}
+}

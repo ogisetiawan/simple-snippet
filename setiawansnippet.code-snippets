@@ -43,8 +43,65 @@
 		],
 		"description": ""
 	},
+	"SESSION": {
+		"scope": "php",
+		"prefix": "_ss",
+		"body": [
+			"$$1 = $$_SESSION['$2'];" 
+		],
+		"description": ""
+	},
+	"GET": {
+		"scope": "php",
+		"prefix": "_g",
+		"body": [
+			"$$1 = $$_POST['$2'];" 
+		],
+		"description": ""
+	},
+	"POST": {
+		"scope": "php",
+		"prefix": "_p",
+		"body": [
+			"$$1 = $$GET['$2'];" 
+		],
+		"description": ""
+	},
+	"include()": {
+		"scope": "php",
+		"prefix": "inc",
+		"body": [
+			"include '$1';",
+		],
+		"description": ""
+	},
+	"include_once()": {
+		"scope": "php",
+		"prefix": "inc1",
+		"body": [
+			"include_once('$1');",
+		],
+		"description": ""
+	},
+	"return true": {
+		"scope": "php,javascript,typescript",
+		"prefix": "rett",
+		"body": [
+			"return true;",
+		],
+		"description": ""
+	},
+	"return false": {
+		"scope": "php,javascript,typescript",
+		"prefix": "retf",
+		"body": [
+			"return false;",
+		],
+		"description": ""
+	},
+
 	
-	// +++++++++++ PHP $2 +++++++++++++++
+	// ##### PHP SNIPPET LEVEL $2 #####
 	"Encrypt MD5": {
 		"scope": "php",
 		"prefix": "md5",
@@ -55,7 +112,7 @@
 		"description": ""
 	},
 
-	// ++++++++++ PHP $3 ++++++++++++
+	// ##### PHP SNIPPET LEVEL $3 #####
 	"JSON Decode": {
 		"scope": "php",
 		"prefix": "jd",
@@ -96,8 +153,60 @@
 		],
 		"description": ""
 	},
+	// ### PHP $CODEIGNITER ###
+	"this": {
+		"scope": "php,javascript,typescript",
+		"prefix": "c-t",
+		"body": [
+	"$$var = $$this->$1->$2();"
+		],
+		"description": ""
+	},
+	// ### JAVASCRIPT ###
+	"console.log()": {
+		"scope": "javascript",
+		"prefix": "cl",
+		"body": [
+			"console.log($1);",
+		],
+		"description": ""
+	},
+	"console.dir()": {
+		"scope": "javascript",
+		"prefix": "cd",
+		"body": [
+			"console.dir(${1:obj});",
+		],
+		"description": ""
+	},
+	"console.error()": {
+		"scope": "javascript",
+		"prefix": "ce",
+		"body": [
+			"console.error(${1:obj});",
+		],
+		"description": ""
+	},
+	"console.info()": {
+		"scope": "javascript",
+		"prefix": "ci",
+		"body": [
+			"console.info(${1:obj});",
+		],
+		"description": ""
+	},
+	"Function": {
+		"scope": "javascript",
+		"prefix": "fn",
+		"body": [
+			"function ${1:methodName} (${2:arguments}) {",
+				"\t$3",
+			"}",
+		],
+		"description": ""
+	},
 
-	// Query
+	// #### QUERY SQL ####
 	"Query Select": {
 		"prefix": "qselect",
 		"body": [

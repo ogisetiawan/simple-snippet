@@ -1,7 +1,7 @@
 # simple-snippet
 Snippet Global Language for Visual Studio Editor 
 
-![Website]'[(https://img.shields.io/website/https/ogisetiawan.github.io.svgdown_color=lightgrey&down_message=offline&style=social&up_color=red&up_message=online)]
+[![Author](https://img.shields.io/website/https/ogisetiawan.github.io.svgdown_color=lightgrey&down_message=offline&style=social&up_color=red&up_message=online)
 
 | Trigger | Description |
 | ------- | ----------- |
